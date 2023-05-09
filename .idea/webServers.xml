@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="ff347561-e5ae-4826-970d-7fdf8eb0b984" name="autodl">
-        <fileTransfer accessType="SFTP" host="region-41.seetacloud.com" port="20348" sshConfigId="d61da05c-58ab-4a2c-bc4c-56ceac903cd3" sshConfig="root@region-41.seetacloud.com:20348 password">
+        <fileTransfer accessType="SFTP" host="region-42.seetacloud.com" port="34911" sshConfigId="d61da05c-58ab-4a2c-bc4c-56ceac903cd3" sshConfig="root@region-42.seetacloud.com:34911 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

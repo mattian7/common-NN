@@ -10,7 +10,7 @@ import torchvision
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="parameter of mnist-classifiers")
-    parser.add_argument("--model", type=str, default="LeNet", choices=['LeNet', 'ResNet', 'AlexNet', 'DenseNet'])
+    parser.add_argument("--model", type=str, default="LeNet", choices=['LeNet', 'ResNet', 'AlexNet', 'DenseNet', 'MobileNet'])
     parser.add_argument("--lr", type=float, default=0.005)
     parser.add_argument("--dropout", type=float, default=0.5)
     parser.add_argument("--batchsize", type=int, default=64)
@@ -42,7 +42,7 @@ def main():
     test_dataloader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=False)
 
     output_dir = 'log/' + args.model + '.txt'
-    # 判断是否是LeNet，如果是，则无需放大图像。
+    # 判断是否是LeNetorMobileNet，如果是，则无需放大图像。
     flag = 0
 
     if args.model == 'LeNet':
@@ -54,6 +54,9 @@ def main():
         model = AlexNet(args).cuda()
     elif args.model == 'DenseNet':
         model = DenseNet(growth_rate=16, input_features=64, num_layers=[6, 12, 24, 16], num_classes=10).cuda()
+    elif args.model == 'MobileNet':
+        model = MobileNet(args).cuda()
+        flag = 1
     else:
         raise ValueError("model is not properly defined ...")
 
