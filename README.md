@@ -22,6 +22,7 @@ MNIST
 - AlexNet: [《ImageNet classification with deep convolutional neural networks 》](https://dl.acm.org/doi/pdf/10.1145/3065386)
 - ResNet: [《Deep Residual Learning for Image Recognition》](https://arxiv.org/pdf/1512.03385.pdf)
 - DenseNet: [《Densely Connected Convolutional Networks》](https://arxiv.org/pdf/1608.06993.pdf)
+- MobileNet：[《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》](https://arxiv.org/abs/1704.04861)
 
 ## Instructions
 
